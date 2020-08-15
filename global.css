@@ -1,0 +1,38 @@
+.checklist-item {
+	position: relative;
+	display: flex;
+	padding-left: 0.75rem;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.checklist-item:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 3px;
+	height: 100%;
+	content: "";
+	border-radius: 8px;
+	background-color: #5e72e4;
+}
+
+.checklist-item-warning:before {
+	background-color: #fb6340;
+}
+
+.checklist-item-success:before {
+	background-color: #2dce89;
+}
+
+.checklist-item-info:before {
+	background-color: #11cdef;
+}
+
+.bg-gradient-default {
+	background: linear-gradient(to top, #675a5a 0, #000000 100%) !important;
+}
+
+.selectContainer {
+	border: none;
+}
